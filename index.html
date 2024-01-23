@@ -92,7 +92,7 @@
                                 </div>
 
                                 <h2 class="mb-4">I’m currently available for freelance work.</h2>
-                                <p class="mb-4"><a class="custom-btn btn click-scroll " href="#section_2">About me</a></p>
+                                <span class="mb-4"><a class="custom-btn btn click-scroll " href="#section_2">About me</a></span> <span class="mb-4"><a class="custom-btn btn click-scroll margin-left " href="#section_6">Hire me</a></span>
                             </div>
                         </div>
 
@@ -168,10 +168,10 @@
   <div class="carousel-inner container" >
     <div class="carousel-item active ">
 
-        <div class="row" style="margin-bottom: 20px ;" tabindex="0">
-                    <div class="col-lg-6 col-12 mt-5 mt-lg-0">
+        <div class="row pad" style="margin-bottom: 15px ; " tabindex="0">
+                    <div class="col-lg-6 col-12 mt-5 mt-lg-0 no-mobile">
 
-                        <h5 class="pt-2 mb-3 no-mobile grey">What I bring to your organization:</h5>
+                        <h5 class="pt-2 mb-3  grey">What I bring to your organization:</h5>
                         <div class="row no-mobile">
                             <!-- Experience and Skills -->
                             <div class="col-lg-5 col-6 featured-border-bottom py-2">
@@ -208,7 +208,7 @@
     </div>
     <div class="carousel-item" >
   <div class="row" style="margin-bottom: 20px ;" tabindex="0">
-                    <div class="col-lg-12 col-12  mt-5 mt-lg-0">
+                    <div class="col-lg-12 col-12  mt-5 mt-lg-0 pad">
                         <h4 class="pt-2 mb-3">My previous experiences</h4>
                         <p>When I worked at <strong>Stanford University</strong>, I was regularly referred to as a “professional get-stuff-donerer,” a title I earned by bringing together large cross-functional teams to deliver alumni-facing projects and products on budget and on time, every time, for six years. </p>
                         <p>Then I worked at <strong>Palantir Technologies</strong> overseeing the day-to-day operations of 5 satellite offices, and I managed infrastructure projects and developed tools to help employees to thrive in a workplace with colleagues in every timezone imaginable.</p>
@@ -220,15 +220,28 @@
     <div class="carousel-item">
         
                 <div class="row" style="margin-bottom: 20px ;" tabindex="0">
-                    <div class="col-lg-12 col-12 mt-5 mt-lg-0">
+                    <div class="col-lg-12 col-12 mt-5 mt-lg-0 pad">
                         <h4 class="pt-2 mb-3">More about me</h4>
                         <p>I am an <strong>avid knitter</strong>, a <strong>founding member</strong> of <a href="https://www.wearecomete.com/" target="_blank">Comète</a>, a <a href="https://www.pmi.org/certifications/certification-resources/registry" target="_blank">certified PMP</a> since 2015, a cat lover, a volunteer with <a href="https://la-ruche.net/accompagnements/incubateur-thsn/" target="_blank">La Ruche/The Human Safety Net</a> and <a href="https://ppm-asso.org/decouvrir-ppm/" target="_blank">Parrains Par Mille</a>, and an <strong>amateur birdwatcher</strong>. As a member of the LGBTQ+ community, I focus on helping small organizations serving underserved communities.</p>
                     </div>
                 </div>
                 
     </div>
+    
   </div>
   
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            <!-- <i class="bi bi-chevron-double-left fs-4"></i> -->
+
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+                                   <!--     <i class="bi bi-chevron-double-right fs-4"></i> -->
+
+        </button>
 
 </section>
 
@@ -237,6 +250,7 @@
   
   document.addEventListener('DOMContentLoaded', function () {
     const carousel = new bootstrap.Carousel(document.getElementById('carouselExampleIndicators'));
+
 
     document.addEventListener('keydown', (event) => {
       if (event.key === 'ArrowLeft') {
@@ -253,7 +267,7 @@
       } else if (event.key === 'ArrowRight') {
         carousel.next();
       }
-    });
+    }); 
   </script>
 
 
@@ -269,9 +283,9 @@
             <div class="col-lg-10 col-12 mx-auto">
                 
 
-                <div class="row pt-lg-5" >
+                <div class="row pt-lg-5 " >
                     <!-- Part-time Leadership -->
-                    <div class="col-lg-6 col-12">
+                    <div class="col-lg-6 col-12 flex-container">
                         <div class="services-thumb" tabindex="0" >
                             
                         <h6 class="projects-menu-link" >Part time leadership</h6>
@@ -281,7 +295,7 @@
                     </div>
 
                     <!-- Operational Infrastructure -->
-                    <div class="col-lg-6 col-12">
+                    <div class="col-lg-6 col-12 flex-container">
                         <div class="services-thumb" tabindex="0">
                             <h6 class="projects-menu-link">Building & strengthening infrastructures</h6>
                             <ul>
@@ -295,7 +309,7 @@
                     </div>
 
                     <!-- International Business Attractiveness -->
-                    <div class="col-lg-6 col-12">
+                    <div class="col-lg-6 col-12 flex-container">
                         <div class="services-thumb services-thumb-up" tabindex="0">
                             <h6 class="projects-menu-link">Making your business attractive internationally</h6>
                             <ul>
@@ -307,7 +321,7 @@
                     </div>
 
                     <!-- Targeted Projects -->
-                    <div class="col-lg-6 col-12">
+                    <div class="col-lg-6 col-12 flex-container">
                         <div class="services-thumb services-thumb-up" tabindex="0">
                             <h6 class="projects-menu-link">Targeted projects</h6>
                             <ul>
@@ -320,7 +334,7 @@
                     </div>
 
                     <!-- Mentoring & Career Development -->
-                    <div class="col-lg-6 col-12">
+                    <div class="col-lg-6 col-12 flex-container">
                         <div class="services-thumb services-thumb-up" tabindex="0">
                             <h6 class="projects-menu-link">Mentoring & employee career development</h6>
                             <p>Boosting skills, confidence, and career growth for individuals.</p>
@@ -328,7 +342,7 @@
                     </div>
 
                     <!-- Custom Services -->
-                    <div class="col-lg-6 col-12">
+                    <div class="col-lg-6 col-12 flex-container">
                         <div class="services-thumb services-thumb-up" tabindex="0">
                             <h6 class="projects-menu-link">Something else</h6>
                             <p><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#98;&#111;&#120;&#64;&#102;&#98;&#102;&#45;&#115;&#101;&#114;&#118;&#105;&#99;&#101;&#115;&#46;&#99;&#111;&#109;">Let's chat</a> about what we could build together!</p>
@@ -408,94 +422,7 @@
                     <div class="row" tabindex="0">
                         <h3 class="big-title" >Projects</h3>
                         <h2>A few projects I can discuss:</h2>
-                       
-
-
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="projects-thumb" tabindex="0">
-
-                                <div class="projects-info">
-
-                                    <i class="project-icon bi bi-droplet-fill"></i><small class="projects-tag">Stanford, 2010</small>                            
-
-
-                                    <p class="projects-title">Designed a new winery database and managed the <a href="https://partners.vinoshipper.com/stanford" target="_blank">Stanford Wine Collection</a>'s transition to an <strong>online-only</strong> sales model.</p>
-                                    
-
-                                
-                            </div>
-                        </div></div>
-
-                         <div class="col-lg-4 col-md-6 col-12">
-                            <div class="projects-thumb" tabindex="0">
-                                <div class="projects-info">
-                                    <i class="bi bi-envelope-fill project-icon"></i><small class="projects-tag">Stanford, 2010-2013</small>                            
-                                    <p class="projects-title"><strong>Improved the segmentation model</strong> for alumni and analyzed event and email feedback by segment for the Stanford Alumni Association.</p>
-                                </div>                                
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="projects-thumb" tabindex="0">
-                                <div class="projects-info">
-                                    <i class="bi bi-bag-fill project-icon"></i><small class="projects-tag">Stanford, 2010-2016</small>                            
-                                    <p class="projects-title">Proposed and worked with creative team to <strong>design projects and merchandise to capitalize on key student interests</strong>, such as the iconic <a href="https://twitter.com/si_vault/status/242992253252026368" target="_blank"> Nerd Nation tee-shirt</a> for the Stanford Alumni Association.</p>
-                                </div>                                
-                            </div>
-                        </div>
-
-                         <div class="col-lg-4 col-md-6 col-12">
-                            <div class="projects-thumb" tabindex="0">
-                                <div class="projects-info">
-                                    <i class=" project-icon bi bi-globe"></i><small class="projects-tag">Stanford, 2014-2016</small>                            
-                                    <p class="projects-title"><strong>Project Manager for <a href="https://www.youtube.com/playlist?list=PLpGHT1n4-mAu8y-mH5YM9cv5rb4k80Ien" target="_blank">Stanford+Connects</a></strong>, a multi-year, 16-city roadshow bringing the best of Stanford University directly to alumni all over the world. </p>
-                                </div>                                
-                            </div>
-                        </div>
-                      <div class="col-lg-4 col-md-6 col-12">
-                            <div class="projects-thumb" tabindex="0">
-                                <div class="projects-info">
-                                    <i class=" project-icon bi-book"></i><small class="projects-tag">Palantir Technologies, 2016-2018</small>                            
-                                    <p class="projects-title">Created a <strong>playbook to open expansion offices</strong> for Palantir Technologies, opened three expansion offices, and introduced new perks and services to the Paris office. 
-</p>
-                                </div>                                
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="projects-thumb" tabindex="0">
-                                <div class="projects-info">
-                                    <i class=" project-icon bi-camera"></i><small class="projects-tag">Meero, 2018</small>                            
-                                    <p class="projects-title"><strong>Automated and optimized</strong> the flow of thousands of client and photographer reminder emails sent every day for Meero's photography on demand business. 
-</p>
-                                </div>                                
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="projects-thumb" tabindex="0">
-                                <div class="projects-info">
-                                    <i class=" project-icon bi-people"></i><small class="projects-tag">Meero, 2019-2021</small>                            
-                                    <p class="projects-title">Oversaw training, onboarding, <strong>project documentation / handover of Meero's APAC client portfolio to newly-hired teams in Bangalore and Tokyo</strong>.</p>
-                                </div>                                
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="projects-thumb" tabindex="0">
-                                <div class="projects-info">
-                                    <i class=" project-icon bi-laptop"></i><small class="projects-tag">Meero, 2020-2022</small>                            
-                                    <p class="projects-title"><strong>Managed a fully remote and then a partially remote team</strong> during the COVID-19 pandemic with <strong>no drop in key performance figures</strong> or productivity. 
-</p>
-                                </div>                                
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="projects-thumb" tabindex="0">
-                                <div class="projects-info">
-                                    <i class=" project-icon bi-wallet"></i><small class="projects-tag">Meero, 2021</small>                            
-                                    <p class="projects-title"><strong>Analyzed the Meero toolstack to reduce spending year over year</strong> by eliminating duplicates, renegotiating contracts, and re-training teams on the remaining tools.</p>
-                                </div>                                
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12">
+                       <div class="col-lg-4 col-md-6 col-12 flex-container">
                             <div class="projects-thumb" tabindex="0">
                                 <div class="projects-info">
                                     <i class=" project-icon bi-bar-chart"></i><small class="projects-tag">Meero, 2022</small>                            
@@ -504,7 +431,86 @@
                                 </div>                                
                             </div>
                         </div>
+                        <div class="col-lg-4 col-md-6 col-12 flex-container">
+                            <div class="projects-thumb" tabindex="0">
+                                <div class="projects-info">
+                                    <i class=" project-icon bi-wallet"></i><small class="projects-tag">Meero, 2021</small>                            
+                                    <p class="projects-title"><strong>Analyzed the Meero toolstack to reduce spending year over year</strong> by eliminating duplicates, renegotiating contracts, and re-training teams on the remaining tools.</p>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 flex-container">
+                            <div class="projects-thumb" tabindex="0">
+                                <div class="projects-info">
+                                    <i class=" project-icon bi-laptop"></i><small class="projects-tag">Meero, 2020-2022</small>                            
+                                    <p class="projects-title"><strong>Managed a fully remote and then a partially remote team</strong> during the COVID-19 pandemic with <strong>no drop in key performance figures</strong> or productivity. 
+</p>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 flex-container">
+                            <div class="projects-thumb" tabindex="0">
+                                <div class="projects-info">
+                                    <i class=" project-icon bi-people"></i><small class="projects-tag">Meero, 2019-2021</small>                            
+                                    <p class="projects-title">Oversaw training, onboarding, <strong>project documentation / handover of Meero's APAC client portfolio to newly-hired teams in Bangalore and Tokyo</strong>.</p>
+                                </div>                                
+                            </div>
+                        </div>
+                      
+                        <div class="col-lg-4 col-md-6 col-12 flex-container">
+                            <div class="projects-thumb" tabindex="0">
+                                <div class="projects-info">
+                                    <i class=" project-icon bi-camera"></i><small class="projects-tag">Meero, 2018</small>                            
+                                    <p class="projects-title"><strong>Automated and optimized</strong> the flow of thousands of client and photographer reminder emails sent every day for Meero's photography on demand business. 
+</p>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 flex-container">
+                            <div class="projects-thumb" tabindex="0">
+                                <div class="projects-info">
+                                    <i class=" project-icon bi-book"></i><small class="projects-tag">Palantir Technologies, 2016-2018</small>                            
+                                    <p class="projects-title">Created a <strong>playbook to open expansion offices</strong> for Palantir Technologies, opened three expansion offices, and introduced new perks and services to the Paris office. 
+</p>
+                                </div>                                
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6 col-12 flex-container">
+                            <div class="projects-thumb" tabindex="0">
+                                <div class="projects-info">
+                                    <i class=" project-icon bi bi-globe"></i><small class="projects-tag">Stanford, 2014-2016</small>                            
+                                    <p class="projects-title"><strong>Project Manager for <a href="https://www.youtube.com/playlist?list=PLpGHT1n4-mAu8y-mH5YM9cv5rb4k80Ien" target="_blank">Stanford+Connects</a></strong>, a multi-year, 16-city roadshow bringing the best of Stanford University directly to alumni all over the world. </p>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 flex-container">
+                            <div class="projects-thumb" tabindex="0">
+                                <div class="projects-info">
+                                    <i class="bi bi-bag-fill project-icon"></i><small class="projects-tag">Stanford, 2010-2016</small>                            
+                                    <p class="projects-title">Proposed and worked with creative team to <strong>design projects and merchandise to capitalize on key student interests</strong>, such as the iconic <a href="https://twitter.com/si_vault/status/242992253252026368" target="_blank"> Nerd Nation tee-shirt</a> for the Stanford Alumni Association.</p>
+                                </div>                                
+                            </div>
+                        </div>
+                        
 
+                        <div class="col-lg-4 col-md-6 col-12 flex-container">
+                            <div class="projects-thumb" tabindex="0">
+                                <div class="projects-info">
+                                    <i class="bi bi-envelope-fill project-icon"></i><small class="projects-tag">Stanford, 2010-2013</small>                            
+                                    <p class="projects-title"><strong>Improved the segmentation model</strong> for alumni and analyzed event and email feedback by segment for the Stanford Alumni Association.</p>
+                                </div>                                
+                            </div>
+                        </div>
+                        
+
+  <div class="col-lg-4 col-md-6 col-12 flex-container">
+                            <div class="projects-thumb" tabindex="0">
+                                <div class="projects-info">
+                                    <i class="project-icon bi bi-droplet-fill"></i><small class="projects-tag">Stanford, 2010</small>                            
+                                    <p class="projects-title">Designed a new winery database and managed the <a href="https://partners.vinoshipper.com/stanford" target="_blank">Stanford Wine Collection</a>'s transition to an <strong>online-only</strong> sales model.</p>
+                            </div>
+                        </div></div>
 
                     </div>
                 </div>
