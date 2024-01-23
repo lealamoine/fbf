@@ -1,0 +1,35 @@
+
+<!-- The Modal -->
+    <div id="myModalcalendly" class="modal">
+        <!-- Modal content -->
+
+        <div class="modal-content calendly-modal">
+            <span class="close" onclick="closeModal2()">&times;</span>
+           
+
+<!-- Calendly inline widget begin -->
+<div style="padding-top: 40px;" class="calendly-inline-widget" data-url="https://calendly.com/lealamoine/30min" style="min-width:320px;height:700px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Calendly inline widget end -->                       
+
+        </div>
+    </div>
+
+         <script>
+        // Open the modal when clicking on "FBF-services"
+        document.getElementById("calendly").addEventListener("click", function () {
+            document.getElementById("myModalcalendly").style.display = "flex";
+        });
+
+        // Close the modal when clicking the close button or outside the modal
+        window.onclick = function (event) {
+            var modal = document.getElementById("myModalcalendly");
+            if (event.target == modal) {
+                closeModal2();
+            }
+        };
+
+        function closeModal2() {
+            document.getElementById("myModalcalendly").style.display = "none";
+        }
+    </script>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="https://www.fbf-services.com/schemas/sitemap" xmlns:xml="http://www.w3.org/XML/1998/namespace" xml:lang="en-US">
+
+   <url>
+      <loc>https://www.fbf-services.com/</loc>
+      <lastmod>2024-01-10</lastmod>
+      <changefreq>quaterly</changefreq>
+      <priority>1.0</priority>
+   </url>
+   
+   <!-- Add more <url> entries for other pages -->
+</urlset>
