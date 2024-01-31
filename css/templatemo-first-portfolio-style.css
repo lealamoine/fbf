@@ -1,6 +1,41 @@
 .img-values{
   max-width: 70px;
 }
+=======
+
+@media screen and (min-width: 1400px) {
+ 
+.flag-container {
+    margin-left: 33%;
+}
+
+}
+
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+ 
+.flag-container {
+    margin-left: 21%;
+}
+
+}
+
+
+@media screen and (min-width: 991px)  and (max-width: 1199px) {
+ 
+
+.flag-container {
+    margin-left: 4%;
+}
+
+}
+
+
+
+.flag{
+  max-width: 15px;
+}
+
 /* side padding*/
 .pad{
     padding-left: 4em;
@@ -743,6 +778,7 @@ strong {
 
 
 @media  screen and (min-width: 991px) {
+
   .hero {
     height: 60vh;
   }
@@ -1297,11 +1333,15 @@ flex: 1;
   .hero-image {
     min-width: 650px;
   }
+
   
 
 }
 
 @media screen and (max-width: 991px) {
+
+
+
   h1 {
     font-size: 48px;
   }
@@ -1434,7 +1474,7 @@ flex: 1;
   color: var(--p-color);
 }
 
-@media screen and (min-width: 575px) {
+@media screen and (min-width: 992px) {
 
   .no-web{
     display: none;
