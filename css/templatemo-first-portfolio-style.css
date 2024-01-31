@@ -1,3 +1,7 @@
+.img-values{
+  max-width: 70px;
+}
+=======
 
 @media screen and (min-width: 1400px) {
  
@@ -234,9 +238,7 @@ body {
   align-items: center;
   justify-content: center;
   }
-.animated-icon {
-    cursor: pointer; /* Changes the cursor to a pointer (hand icon) on hover */
-}
+
 
  @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
@@ -250,9 +252,7 @@ body {
     }
   }
 
-  .animated-icon:hover {
-    animation: bounce 1s infinite;
-  }
+
 
 .anoclass{
   color: var(--dark-color)!important;
@@ -429,6 +429,7 @@ strong {
 
   border-radius: var(--border-radius-small);
   padding: 10px 30px;
+  flex: 1;
 }
 
 .section-title-wrap-m:hover {
@@ -437,7 +438,7 @@ strong {
 
 }
 
-.section-title-wrap-m:hover h6 {
+.section-title-wrap-m:hover  {
     transform: scale(1.05); /* Slightly enlarges the element */
     color: var(--secondary-color); /* Changes the text color */
     transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for scale and color */
